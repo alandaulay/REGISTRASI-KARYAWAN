@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrasi Karyawan</title>
+</head>
+<body>
+  <div>
+    <div style="text-align: center;">
+      <img src="logo.jpg" alt="Logo Karyawan" style="width: 190px;">
+      <h2>REGISTRASI KARYAWAN</h2>
+    </div>
+    
+    <form action="/submit" method="POST" style="margin: 0 auto; width: 300px;">
+      <label for="nama">Nama:</label><br>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required><br><br>
+
+      <label for="id">ID:</label><br>
+      <input type="text" id="id" name="id" placeholder="Masukkan ID Karyawan" required><br><br>
+
+      <label for="jabatan">Jabatan:</label><br>
+      <input type="text" id="jabatan" name="jabatan" placeholder="Masukkan jabatan" required><br><br>
+
+      <label>Jenis Kelamin:</label><br>
+      <input type="radio" id="male" name="gender" value="Laki-laki" required>
+      <label for="male">Laki-laki</label><br>
+      <input type="radio" id="female" name="gender" value="Perempuan" required>
+      <label for="female">Perempuan</label><br><br>
+
+      <button type="submit">LOGIN</button>
+    </form>
+    
+    <h3 style="text-align: center;">Daftar Karyawan</h3>
+    <table border="1" cellspacing="0" cellpadding="5" style="width: 100%; margin: 0 auto;">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>ID</th>
+          <th>Jabatan</th>
+          <th>Jenis Kelamin</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Alan</td>
+          <td>23106050016</td>
+          <td>Skertaris</td>
+          <td>Laki-laki</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Nabil</td>
+          <td>23106050010</td>
+          <td>Industri</td>
+          <td>Laki-laki</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
